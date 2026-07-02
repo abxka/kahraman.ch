@@ -3,10 +3,6 @@
    ============================================= */
 
 // ── Secure transport ─────────────────────────
-if (window.location.protocol !== 'https:' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
-  window.location.replace(`https://${window.location.host}${window.location.pathname}${window.location.search}${window.location.hash}`);
-}
-
 // ── Dark / Light mode ────────────────────────
 const root = document.documentElement;
 const themeBtn = document.getElementById('theme-toggle');
